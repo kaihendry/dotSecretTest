@@ -26,8 +26,9 @@ console or via some exception.
 > means you have another place where you store secret information which can
 > complicate compliance processes if you don't use AWS for that.
 
-The big problem with fetching secrets at runtime is:
+The **big problem with fetching secrets at runtime** is:
 
 1. Setting up the permissions
 2. The expense of doing a call everytime the code is invoked (code complexity and AWS charges!)
 3. Setting up caching to mitigate point 2
+4. Since environment can also store non-secrets, since secrets are now split out, handled differently, there is confusion now where the configuration value and its associated lifecycle
