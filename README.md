@@ -31,4 +31,4 @@ The **big problem with fetching secrets at runtime** is:
 1. Setting up the permissions
 2. The expense of doing a call everytime the code is invoked (code complexity and AWS charges!)
 3. Setting up caching to mitigate point 2
-4. Since environment can also store non-secrets, since secrets are now split out, handled differently, there is confusion now where the configuration value and its associated lifecycle
+4. Since environment can also store non-secrets, since secrets are now split out, handled differently, there is ambiguity now where the configuration value lives and its associated lifecycle
